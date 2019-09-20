@@ -7,13 +7,6 @@ public class PlayerControl : MonoBehaviour
     public float driveSpeed = 30;
     public float turnSpeed = 90f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         float verticalInput = Input.GetAxis("Vertical");
@@ -22,3 +15,4 @@ public class PlayerControl : MonoBehaviour
         transform.Rotate(Vector3.up, turnSpeed * horizontalInput * Time.deltaTime);
     }
 }
+
