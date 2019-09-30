@@ -18,6 +18,6 @@ public class PlayControl : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
         float HoHorizontal = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.forward * driveSpeed * verticalInput * Time.deltaTime);
-        transform.Rotate(Vector3.up * trunSpeed * verticalInput * Time.deltaTime);
+        transform.Rotate(Vector3.up * trunSpeed * HoHorizontal * Time.deltaTime);
     }
 }
