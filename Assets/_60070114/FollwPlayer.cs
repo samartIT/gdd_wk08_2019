@@ -10,7 +10,7 @@ public class FollwPlayer : MonoBehaviour
         
     }
     public GameObject player;
-    Vector3 offset = new Vector3(17, 12, -33);
+    Vector3 offset = new Vector3(8, 4, -15);
     // Update is called once per frame
     void Update()
     {
