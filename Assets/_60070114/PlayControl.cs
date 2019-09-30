@@ -15,6 +15,9 @@ public class _Scripts : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float verticalInput = Input.GetAxis("Verti")
+        float verticalInput = Input.GetAxis("Vertical");
+        float HoHorizontal = Input.GetAxis("Horizontal");
+        transform.Translate(Vector3.forward * driveSpeed * verticalInput * Time.deltaTime);
+        transform.Rotate(Vector3.forward * driveSpeed * verticalInput * Time.deltaTime);
     }
 }
